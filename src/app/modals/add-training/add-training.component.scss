@@ -1,0 +1,94 @@
+main{
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 0 auto;
+    margin-top: 40px;
+    max-width: 550px;
+    left: 40px;
+    background-color:var(--secondary-color);
+    height: 400px;
+    border-radius: 13px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    input{
+        border: 1px solid var(--primary-color)!important;
+    }
+    form{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 40px;
+    }
+   .column{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+   }
+   textarea{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid var(--primary-color);
+
+   }
+   select{
+    border: 1px solid var(--primary-color);
+    height: 35px;
+    outline: none;
+    font-size: 14px;
+   }
+    .container-time{
+        display: flex;
+        gap: 10px;
+        input{
+            height: 60px;
+            border: 1px solid var(--primary-color);
+            outline: none;
+            width: 80px;
+            text-align: center;
+            font-size: 14px;
+        }
+    }
+    .form-container{
+       
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        .input-text{
+            height: 40px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 800;
+        }
+        .btn-guardar{
+            border: 2px solid white;
+            height: 40px;
+            border-radius: 5px;
+            font-size: 14px;
+            color: white;
+            background-color: var(--primary-color);
+            cursor: pointer;
+        }
+        label{
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 14px;
+        }
+        .input-date, .input-timer{
+            height: 40px;
+            outline: none;
+            border: none;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: 800;
+            color: gray;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+main{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: absolute;
+    right: 80px;
+    max-width: 350px;
+    background-color:var(--secondary-color);
+    max-height: 550px;
+    overflow-y: scroll;
+   min-height: 550px;
+    article{
+        background-color: white;
+        display: flex;
+        padding: 20px;
+        align-items: center;
+        margin-bottom: 10px;
+        img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+        div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            h4{
+                text-align: right;
+                color: var(--primary-color);
+                font-size: 16px;
+                span{
+                    font-weight: bold;
+                    color: black;
+                }
+            }
+            p{
+                color: var(--secondary-font);
+                text-align: right;
+                font-size: 12px;
+            }
+        }
+    }
+}

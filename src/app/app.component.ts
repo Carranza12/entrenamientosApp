@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { BdService } from './services/bd.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,17 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'entrenamientos-app';
+  public isShowNotificationBar : boolean = false;
+  public isShowAddModal: boolean = false;
+
+  constructor( ){}
+
+  public recibirNotification(event: boolean):void{
+    this.isShowNotificationBar = event;
+    console.log('dato que se va a recibir:', this.isShowNotificationBar)
+  }
+
+  public recibirAddModal(event: boolean) : void{
+    this.isShowAddModal  = event;
+  }
 }

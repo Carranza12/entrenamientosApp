@@ -1,0 +1,25 @@
+section{
+    width: 350px;
+    background-color: var(--secondary-color);
+    margin: 15px;
+    margin-left: 0;
+    border-radius: 0px 13px 13px 0px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+    p{
+        text-align: left;
+        span{
+            font-size: 26px;
+            font-weight: 800;
+            color: var(--primary-color);
+        }
+    }
+    img{
+        width: 70px;
+        height: 70px;
+        object-fit: cover;
+    }
+}

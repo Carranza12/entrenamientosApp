@@ -1,0 +1,58 @@
+<main *ngIf="isShowAddModal">
+    <h2>Nuevo entrenamiento</h2>
+    <form [formGroup]="trainingForm" >
+       <div class="column">
+
+
+        <div class="form-container">
+            <input class="input-text" formControlName="titulo" type="text" placeholder="Titulo del entrenamiento">
+        </div>
+    
+        <div class="form-container">
+            <label >Fecha</label>
+            <input class="input-date" type="date" formControlName="fecha" >
+        </div>
+    
+        <div class="form-container">
+            <label >Hora de inicio</label>
+            <input type="time" formControlName="hora" class="input-timer" >
+        </div>
+    
+        <div class="form-container">
+            <label >Tipo de entrenamiento</label>
+            <select formControlName="tipo" >
+                <option value="">selecciona</option>
+                <option value="Fondo Largo">Fondo largo</option>
+                <option value="Velocidad">Velocidad</option>
+                <option value="Trote regenerativo">Trote regenerativo</option>
+            </select>
+        </div>
+
+        <div class="form-container">
+            <input formControlName="distancia" class="input-text" type="number" placeholder="Distancia en km's">
+        </div>
+       </div>
+    
+      <div class="column">
+        
+    
+        <div class="form-container ">
+            <label>Tiempo</label>
+            <div class="container-time">
+                <input formControlName="tiempo_h" type="number" placeholder="00h">
+                <input formControlName="tiempo_m" type="number" placeholder="00m">
+                <input formControlName="tiempo_s" type="number" placeholder="00s">
+            </div>
+        </div>
+    
+        <div class="form-container">
+            <label>Descripción</label>
+            <textarea formControlName="descripcion"  cols="30" rows="7"></textarea>
+        </div>
+
+        <div class="form-container">
+            <button type="button" (click)="saveForm()" class="btn-guardar">Guardar</button>
+        </div>
+      </div>
+    </form>
+</main>

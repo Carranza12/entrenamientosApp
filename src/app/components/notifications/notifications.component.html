@@ -1,0 +1,12 @@
+<main *ngIf="isShowNotificationBar">
+    <article style="height: 550px;" *ngIf="trainings.length === 0">
+        <h1>No tienes actividades :(</h1>
+    </article>
+    <article *ngFor="let item of trainings">
+        <img src="../../../assets/icons/run.png" alt="run-icon">
+        <div>
+            <h4>Se ha registrado tu actividad! <span>{{item.titulo}}</span> con éxito</h4>
+            <p>{{ item.fecha | date }} a las {{item.hora}}</p>
+        </div>
+    </article>
+</main>
